@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY Deck FoodHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="side-navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="design">
+                <a href="">material</a>
+                <a href="">design</a>
+                <a href="">process</a>
+            </div>
+        </div>
+
+        <div class="top-navbar">
+            <div class="top">
+                <a href="#">Branches</a>
+                <a href="#">Features</a>
+                <a href="#">Recipes</a>
+                <a href="#">HotLine</a>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-opencart"></i></a>
+                <img src="Screenshot 2024-09-09 at 23-58-43 images (JPEG Image 201 × 251 pixels).png" alt="">
+                <input type="checkbox" id="theme-switch" class="theme-switch-checkbox">
+                <label for="theme-switch" class="theme-switch-label">
+                    <i class="fa-regular fa-sun"></i>
+                    <i class="fa-regular fa-moon"></i>
+                </label>
+            </div>
+        </div>
+
+              <div class="food">
+                <div class="foodbar">
+                    <span>foodbar</span>
+                    <img src="img1.png" alt="" id="foodbar-img">
+                </div>
+                
+                <div class="order">
+                    <h1>Savoury</h1>
+                    <p>“Our waterfront restaurant offers stunning sunset views while you savor our seafood platter.” Imagine the gentle lapping of waves as you enjoy your meal.</p>
+                    <span class="anker">$28k</span>
+                    <span class="sp">Discount 42%</span>
+                    <a href="" class="btn">Order Now!</a>
+                </div>
+
+              </div>
+
+  
+
+              <div class="footer">
+                <div class="images">
+                    <img src="img5.png" alt="Indian Veg Thali" class="item-img">
+                    <span>$26</span>
+                    <p>Indian Thaki</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#"<i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+                <div class="images">
+                    <img src="img2.png" alt="Asparagus wild salad" class="item-img">
+                    <span>$23</span>
+                    <p>Asparagus</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#"<i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+                <div class="images">
+                    <img src="img1.png" alt="Fresh Steak" class="item-img">
+                    <span>$43</span>
+                    <p>Steak</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#"<i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+                <div class="images">
+                    <img src="img3.png" alt="Spicy Noodles with Mutton" class="item-img">
+                    <span>$23</span>
+                    <p>Asparagus wild</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#"<i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+                <div class="images">
+                    <img src="img4.png" alt="punjabi Thali" class="item-img">
+                    <span>$13</span>
+                    <p>Thali's</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#"<i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+      
+              </div>
+
+       <div class="Social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+       </div>
+
+    </header>
+    <script>
+    const addTOCartButtons = document.querySelectorAll('.images a');
+
+    const cartIcon = document.querySelector('.top-navbar .icons a 1');
+
+
+    let cartCount = 0;
+
+    addTOCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            cartCount++;
+            cartIcon.textContent = cartCount;
+        });
+    });
+
+    const footerImages = document.querySelectorAll('.footer .images img');
+
+    const foodbarImage = document.querySelector('.foodbar img');
+
+    footerImages.forEach(image => {
+        image.addEventListner('click', () => {
+            foodbarImages.src = image.src;
+        });
+    });
+
+
+    const itemImages = document.querySelectorAll('.item-img');
+
+    itemImages.foreach(img => {
+        img.addEventListner('click',() =>{
+            itemImages.forEach(img => img.classList.remove('animated'));
+            img.classList.add('animated')
+        });
+    });
+
+
+    const themeswitch = document.getElementById('theme-switch');
+
+    const body = document.body;
+
+    themeswitch.addEventListner('change', function () {
+        body.classList.toggle('dark-mode');
+    });
+    </script>
+</body>
+</html>
